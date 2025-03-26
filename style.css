@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --paragrap-color:#666666;
+    --button-color:#B88E2F;
+    --bg-color:#FCF8F3;
+    --hadding-color:#333333;
+    --h1-font-size: 30px;
+    --Responsive-hadding-font-size: 15px;
+
+
+
+}
+
+/*------------------------------- navber responsive start -------------------------- */
+.logo-img{
+    margin-left: 1cm;
+    max-width: 4cm;     
+}
+.bg-light {
+	background-color: #fff !important;
+}
+.nav-ul{
+    margin-left: 8cm;
+}
+.nav-ul li{
+    margin:0px 30px
+}
+.navbar-light .navbar-nav .nav-link {
+	color: black !important;
+}   
+.logo{
+    margin-right: 50px;
+}
+.logo i{
+    font-size: 17px;
+    margin: 0px 30px;
+}
+@media screen and (max-width: 800px){
+    .nav-ul li {
+        margin: 0px 20px;
+    }
+    .nav-ul {
+        margin-left:0px ;
+    }
+}
+
+/*------------------------------- navber responsive end-------------------------- */
+/*------------------------------- Banner Section-------------------------- */
+.banner{
+    background-image: url(./img/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.banner img{}
+.Card {
+	display: flex;
+	justify-content: right;
+	padding: 5cm 1cm 5cm 0cm;
+}   
+.inner-card {
+	max-width: 16cm;
+	padding: 30PX;
+	background: #FFF3E3;
+}
+.card-title {
+	letter-spacing: 4px;
+    padding:5px 0px;
+    display: inline-block;
+}
+.card-hadding{
+    font-weight: 600;
+    color: #B88E2F;
+}
+.card-paragraph {
+	font-size: 15px;
+}   
+.button{}
+.button-main {
+	text-decoration: none;
+	padding: 13px 35px;
+	color: white;
+	background: #B88E2F;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+/* Banner -responsive */
+@media screen and (max-width: 1080px){
+    .inner-card {
+        max-width: 10cm;
+        
+    } 
+    .card-title {
+            padding: 0;
+            font-size: 12px;
+    }
+    .card-hadding {
+        font-weight: 600;
+        color: #B88E2F;
+        font-size: 24px;
+    }
+    .card-paragraph {
+        font-size: 12px;
+    }
+    .button-main {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .Card {
+        padding: 2cm 1cm 3cm 0px;
+    }
+}
+
+@media screen and (max-width: 915px){
+    .banner {
+        background-repeat: inherit;
+        background-size: cover ;
+}
+.card-paragraph {
+    font-size: 10px;
+}
+.card-title {
+    font-size: 10px;
+}
+.inner-card {
+    max-width: 6cm;
+    
+}
+.Card {
+    justify-content: center;
+    padding: 1cm 3cm 2cm 0px;
+} 
+.logo-img {
+	max-width: 2.5cm;
+}
+}
+
+/* Banner -responsive End */
+
+/*------------------------------- Banner Section - End -------------------------- */
+/* <!-- ------------------------Browse The Range ------------->
+<!-- -------------------------Display-Section start---------- --> */
+
+.display{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.display-text{
+        text-align: center;
+        margin: 1cm;
+    }
+
+.display-text h1 {
+    font-size: var(--h1-font-size);
+    font-weight:600;
+    color: var(--hadding-color);
+}
+.display-text p{
+    color: var(--paragrap-color);
+}
+.main-display {
+    display: flex;
+    gap: .5cm;
+    justify-content: center;
+}
+.display-img h1 {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0px;
+    color: var(--hadding-color);
+}
+.display-img img{ 
+    width: 100%;
+}
+/* ------------------------- Display-Responsive -------------------*/
+
+@media screen and (man-width: 1024px){
+    .display{
+        min-width: 1200px;
+        margin: auto;
+    
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .display-img h1 {
+
+        font-size: var(--Responsive-hadding-font-size);
+        
+    }
+    .display-text p {
+        font-size: 12px;
+    }
+   
+    .main-display {
+        display: flex;
+        gap: 0.4cm;
+        justify-content: center;
+        margin: 0px 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 920px){
+    .display-text h1 {
+        font-size: var(--Responsive-hadding-font-size);
+    }
+    .display-text p {
+        font-size: 12px;
+    }
+    .main-display {
+        flex-direction: row;
+        gap: 3px;
+    } 
+    .display-img h1 {
+        font-size: 12px;
+    }
+}
+
+
+/* --------Display Responsive end ------- */
+
+/* 
+<!-- -------------------------Display-Section end---------- --> */
+
+
+.Product{
+    max-width: 1200px;
+    margin: auto;
+}
+.Product h1 {
+	text-align: center;
+	color: var(--hadding-color);
+	font-size: var(--h1-font-size);
+	margin: 1cm 0px;
+}
+.inner-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit ,minmax(250px, 1fr));
+	justify-items: center;
+    column-gap: 1cm;
+}
+.product-list {
+    background: #F4F5F7;
+    margin: 20px;
+    position: relative;
+}
+/* Before-After */
+ .ten{
+    position: relative;
+ }
+ .ten::after {
+    position: absolute;
+    content: "-30%";
+    background-color: #f9ca24;
+    color: white;
+    top: 9px;
+    right: 14px;
+    padding: 16px 8px;
+    font-weight: 500;
+    border-radius: 50%;
+    z-index: 5;
+}
+.New{
+    position: relative;
+}
+.New::after{
+    position: absolute;
+    content: "New";
+    background-color: #ff7979;
+    color: white;
+    top: 9px;
+    right: 14px;
+    padding: 15px 9px;
+    font-weight: 500;
+    border-radius: 50%;
+    z-index: 5;
+}
+/* Before after end */
+.list-text {
+	margin-left: 10px;
+}
+.list-text h2 {
+	font-size: 15px;
+	padding-top: 15px;
+	color: var(--h1-font-size);
+}
+.list-text p {
+	font-size: 12px;
+    color: var(--paragrap-color);
+}
+.list-wrap {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 11px;
+	margin-bottom: 25px;
+}
+.list-wrap span{}
+.list-wrap del{
+    color: var(--paragrap-color);
+}
+
+/* hover-content */
+.hover-content {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0cm;
+	background-color: #0000008a;
+    transition: ease-in-out .3s;
+    
+}
+.inner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+.button{}
+.button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 3px;
+    color: #B88E2F;
+    margin: 20px;
+    display: inline-block;
+    transition: .3s;
+}
+.button a:hover{
+    background: #B88E2F;
+    color: #ffffff;
+}
+.icon {
+    color: white;
+    font-size: 15px;
+}
+.icon i{
+    margin: 0px 10px;
+}
+.icon i span{
+    font-weight: 200;
+    margin: 0 5px;
+}
+/* hover-content-Hover */
+.product-list:hover .hover-content {
+    z-index: 1;
+    
+}
