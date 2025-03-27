@@ -58,7 +58,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.banner img{}
+
 .Card {
 	display: flex;
 	justify-content: right;
@@ -81,7 +81,7 @@
 .card-paragraph {
 	font-size: 15px;
 }   
-.button{}
+
 .button-main {
 	text-decoration: none;
 	padding: 13px 35px;
@@ -182,13 +182,30 @@
 }
 /* ------------------------- Display-Responsive -------------------*/
 
-@media screen and (man-width: 1024px){
-    .display{
-        min-width: 1200px;
-        margin: auto;
-    
+@media screen and (max-width: 1195px){
+    .product-list {
+        background: #F4F5F7;
+        margin: 20px;
+        position: relative;
+        width: 230px;
     }
+    .product-list img{
+        width: 100%;
+    }
+    .inner-section {
+       
+        column-gap: 0cm;
+    }
+    .list-wrap {
+        
+        font-size: 12px;
+        margin-bottom: 20px !important;
+    }
+    
+     
+
 }
+
 
 @media screen and (max-width: 1024px){
     .display-img h1 {
@@ -205,6 +222,11 @@
         gap: 0.4cm;
         justify-content: center;
         margin: 0px 20px;
+    }
+    .display{
+        min-width: 1200px;
+        margin: auto;
+    
     }
 
 }
@@ -304,7 +326,7 @@
 	margin: 0px 11px;
 	margin-bottom: 25px;
 }
-.list-wrap span{}
+
 .list-wrap del{
     color: var(--paragrap-color);
 }
@@ -328,7 +350,7 @@
     height: 100%;
     
 }
-.button{}
+
 .button a {
     text-decoration: none;
     padding: 10px 20px;
@@ -359,3 +381,107 @@
     z-index: 1;
     
 }
+/*-------------------------------------Carosol-Section----------- */
+.carosol{
+    background-color: var(--bg-color);
+}
+.main-carosol{
+    display: grid;
+    /* grid-template-columns:  600px auto ; */
+    grid-template-columns: repeat( auto-fit , minmax(250px, 1fr));
+}
+
+.carosol-text {
+    justify-items: center;
+    align-content: center;
+}
+.carosol-text h1 {
+	font-size: 35px;
+	margin: 10px 0px;
+    font-weight: 600;
+    color: var(--hadding-color);
+}
+.carosol-text p{
+    font-size: 15px;
+    color: var(--paragrap-color);
+}
+
+.carosol-img img {
+	width:100%;
+	padding: 40px 30px;
+}
+/*--------- Carosol-Section-Responsive------- */
+@media screen and (max-width :915px ) {
+    .carosol-text {
+        text-align: center;
+    }
+    .carosol-text h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .carosol-text p {
+        font-size: 12px;
+    }
+    .button a {
+        margin: 0;
+    }
+}
+/*--------- Carosol-Section-Responsive END------- */
+/* ----------------------------------------Galary - Section------------------- */
+
+
+.main-galary{
+    text-align: center;
+}
+.galary-text {
+    margin-top: 1cm;
+    position: relative;
+    top: 1.5cm;
+}
+.galary-text p{
+    color: var(--paragrap-color);
+}
+.galary-text h1 {
+    font-size: 35px;
+    color: var(--hadding-color);
+}
+
+.galary-img img {
+    width: 100%;
+  
+}
+/* ----------------- ---------Galary - Section-Responsive-------------*/
+
+@media screen and (max-width:1180px){
+    .galary-text {
+        top: 0.5cm;
+    }
+    .galary-text h1 {
+        font-size: 25px;
+        
+    }
+    .inner-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(200px, 1fr));
+        justify-items: center;
+        column-gap: 0.5cm;
+    }   
+}
+@media screen and (max-width:915px){
+    .galary-text h1 {
+        font-size: 20px;
+    }
+    .galary-text p {
+        font-size: 12px;
+    }
+    .galary-text{
+        padding: 0;
+        margin-bottom: 0;
+        top: 0.3cm;
+    }
+}
+/* ----------------- ---------Galary - Section-Responsive END-------------*/
+
+
+
+
