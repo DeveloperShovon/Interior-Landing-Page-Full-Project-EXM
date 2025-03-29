@@ -1,8 +1,0 @@
-text-decoration: none;
-    padding: 10px 20px;
-    background: white;
-    border-radius: 3px;
-    color: #B88E2F;
-    margin: 20px;
-    display: inline-block;
-    transition: .3s;
