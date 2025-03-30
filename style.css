@@ -917,6 +917,9 @@
     .footer-collam-3 {
         margin-right: 100px;
     }
+    .information-card-img img {
+        width: 60%;
+    }
 }
 
 

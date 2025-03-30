@@ -1,0 +1,189 @@
+:root{
+    --paragrap-color:#666666;
+    --button-color:#B88E2F;
+    --bg-color:#FCF8F3;
+    --hadding-color:#333333;
+    --h1-font-size: 30px;
+    --Responsive-hadding-font-size: 15px;
+
+
+
+}
+.black{
+    background-color: black;
+}
+.purple{
+    background-color: purple;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* --------------Navber-section ---------*/
+a.nav-link {
+    font-size: 20px;
+}
+
+/* --------------Navber-section-end ---------*/
+
+/* ---------------------------Indicator-section------------------- */
+.indicator{}
+.main-indicator {
+	display: flex;
+	padding: 30px 0px;
+	background-color: #F9F1E7;
+	padding-left: 43px;
+}
+.main-indicator a {
+	text-decoration: none;
+	font-size: 20px;
+	color: var(--paragrap-color) ;
+}
+.main-indicator a:hover{
+    border-bottom: 2px solid orange;
+}
+.main-indicator i {
+	font-size: 20px;
+	margin: 6px 24px;
+}
+.main-indicator span{}
+.main-indicator span a{}
+.main-indicator p {
+	font-size: 20px;
+	padding: 0px 10px;
+	border-left: 2px solid #00000063;
+}
+/* Indicator-section-responsive */
+@media screen and (max-width: 1080px)
+{
+    .main-indicator a {  
+        font-size: 18px;
+    }
+    .main-indicator p {
+        font-size: 18px;      
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main-indicator {
+        padding: 12px 0px;
+        padding-left: 15px;
+    }
+    .main-indicator a {  
+        font-size: 12px;
+    }
+    .main-indicator p {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+}
+/* ---------------------------Indicator-section-end------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------add-to-card -----------------------*/
+
+.add-to-card{}
+.main-card{
+    display: grid;
+    grid-template-columns: 2fr 4fr 6fr;
+}
+.collam_img {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* text-align: right; */
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 46px;
+    margin-right: 20px;
+}
+.collam_img img {
+    max-width: 100%;
+    background-color: #F9F1E7;
+    margin-bottom: 55px;
+}
+.middle-img {
+	text-align: center;
+	background-color: #F9F1E7;
+	padding: 100px 0px;
+	margin-top: 45px;
+}
+.middle-img img{}
+.right-text {
+    margin: 40px 80px;
+}
+.right-text h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.right-text h3 {
+    padding: 5px 0px;
+    color: #9F9F9F;
+}
+.right-text p{
+    color: var(--paragrap-color);
+}
+.right-text span{
+    color: var(--paragrap-color);
+    padding: 10px 0px;
+}
+
+.rateing {
+    display: flex;
+    padding: 5px 0px;
+}
+.star{}
+.star i {
+    color: gold;
+    font-size: 20px;
+}
+.review{}
+.rateing p {
+    padding: 0px 10px;
+    border-left: 2px solid #00000069;
+    color: var(--paragrap-color);
+}
+.right-text-button{}
+.right-text-button a {
+    text-decoration: none;
+    padding: 10px 14px;
+    margin: 12px 19px 12px 0px;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.Main_color{
+    display: flex;
+}
+.color {
+    padding: 20px;
+    margin: 30px 20px 30px 0px;
+    border-radius: 55%;
+}
+.main-button{}
+.number{}
+.number input{}
+.btn{}
+.btn a{}
+.btn a i{}
