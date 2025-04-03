@@ -410,4 +410,102 @@ a.nav-link {
     .dis-button a {
         font-size: 15px;
     }
+    .dis-button a {
+        font-size: 15px;
+        margin: 0;
+        padding-right: 8px;
+    }
+    .Discription-details p {
+        font-size: 15px;
+        margin: 12px 0px;
+    }
+    .Discription-details span {
+        font-size: 15px;
+
+        margin: 12px 0px;
+    }
+    .details-part-img {
+        flex-direction: column;
+    }
+    .info-right p {
+        font-size: 12px;
+    }
+    .info-left p {
+        font-size: 12px;
+    }
+    .btn a {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+    .number input {
+        padding: 10px 10px;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .color {
+        padding: 15px;
+    }
+    .right-text-button a {
+        padding: 8px 12px;
+    
+    }
+    .right-text p {
+        color: var(--paragrap-color);
+        font-size: 12px;
+    }
+    .right-text h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .right-text h3 {
+        font-size: 18px;
+    }
+    .right-text {
+        margin: 35px 30px;
+        grid-column: 1/-1;
+    }
+    .btn a {
+        padding: 8px 8px;
+        font-size: 12px;
+        outline: none;
+    }
 }
+@media screen and (max-width:1231px)
+{
+    .btn a {
+        text-decoration: none;
+        padding: 12px 11px;
+        border: 2px solid black;
+        color: black;
+        border-radius: 15px;
+        font-size: 15px;
+        outline: none;
+    }
+    .number input {
+        
+        padding: 10px 15px;
+        font-size: 18px;
+        margin-top: 6px;
+        outline: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
