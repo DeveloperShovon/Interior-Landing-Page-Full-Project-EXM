@@ -489,9 +489,19 @@ a.nav-link {
         outline: none;
     }
 }
+@media screen and (max-width:780px)
+{
+    .details-part-img {
+        flex-direction: column;
+    }
+}
 
 
-
+/* -----------our-product--------------- */
+.Product {
+    max-width: 1700px;
+    margin: auto;
+}
 
 
 
