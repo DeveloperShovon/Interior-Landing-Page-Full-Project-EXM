@@ -406,7 +406,7 @@ a.nav-link {
         font-size: 20px;
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:950px){
     .dis-button a {
         font-size: 15px;
     }

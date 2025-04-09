@@ -27,9 +27,20 @@
 }
 .nav-ul{
     margin-left: 8cm;
+    
 }
 .nav-ul li{
     margin:0px 30px
+    
+    
+}
+.nav-ul li a{
+    transition: .3s;
+    overflow: hidden;
+    text-decoration: none;
+}
+.nav-ul li a:hover{
+    border-bottom:3px solid #f1ac57;
 }
 .navbar-light .navbar-nav .nav-link {
 	color: black !important;
@@ -294,7 +305,7 @@
 
 
 .Product{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 .Product h1 {
@@ -432,6 +443,7 @@
 .carosol-text {
     justify-items: center;
     align-content: center;
+    text-align: center;
 }
 .carosol-text h1 {
 	font-size: 35px;
@@ -461,7 +473,14 @@
         font-size: 12px;
     }
     .button a {
-        margin: 0;
+        
+        padding: 7px 12px;
+        margin: 10px;
+        font-size: 12px;
+    }
+    .icon i {
+        margin: 0px 5px;
+        font-size: 12px;
     }
 }
 /*--------- Carosol-Section-Responsive END------- */
@@ -595,12 +614,26 @@
 
 
 /* -----------------Section-footer-responsive----------------- */ 
-
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1180px)
+{
     .footer-collam-2 {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        min-width: 500px;
+        gap: 50px;
     }
+}
+
+
+@media screen and (max-width: 915px) {
+    
+    .footer-collam-2 {
+        display: flex;
+        justify-content: center;
+        min-width: 500px;
+        gap: 50px;
+    }
+    
     .main-footer{
         padding: 0;
     }
@@ -609,7 +642,7 @@
         display: grid;
         
         justify-items: initial;
-        /* align-items: stretch; */
+        
     }
     .button-list li a {
         font-size: 12px;
@@ -643,13 +676,34 @@
         font-size: 12px;
     }
     .footer-collam-4 {
-        text-align: center;
+        grid-column: 1/-1;
+        justify-items: center;
+        margin-top: 20px;
     }
     .reverved {
         border-top: 1px solid #e9e9e9;
         padding-top: 5px;
         font-size: 10px;
         text-align: center;
+    }
+
+    .footer-collam-2 {
+        display: flex;
+        justify-content: space-around;
+        min-width: 0px;
+    }
+    .footer-collam-3 {
+        margin-right: 0px;
+    }
+    .footer-collam-3 {
+        margin: 0px;
+    }
+   
+}
+
+@media screen and (max-width: 500px) {
+    .footer-collam-3 {
+        margin: 0px;
     }
 }
 
@@ -660,6 +714,7 @@
 .shop-baner {
     margin-top: 20px;
     position: relative;
+    overflow: hidden;
 }
 .main-shop-background {
     filter: blur(5px);
@@ -914,12 +969,12 @@
     .information {
         padding: 40px 0px; 
     }
-    .footer-collam-3 {
-        margin-right: 100px;
-    }
+  
     .information-card-img img {
         width: 60%;
     }
+
+  
 }
 
 
